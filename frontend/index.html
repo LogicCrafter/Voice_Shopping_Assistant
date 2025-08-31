@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Shopping Assistant</title>
+    <style>
+      :root{--bg:#0b1020;--card:#121836;--muted:#9aa3b2;--txt:#fff;--accent:#4f8cff}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,#0b1020,#11152b);color:var(--txt)}
+      .container{max-width:960px;margin:24px auto;padding:16px}
+      .card{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 6px 30px rgba(0,0,0,.25)}
+      .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+      .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:12px}
+      .item{background:#0f1430;border:1px solid #283058;border-radius:12px;padding:12px}
+      button{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 14px;cursor:pointer}
+      button.secondary{background:transparent;border:1px solid #394272;color:#d6dcf5}
+      input,select{width:100%;padding:10px;border-radius:10px;border:1px solid #394272;background:#0f1430;color:#fff}
+      .chip{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#0f1430;border:1px solid #283058}
+      .muted{color:var(--muted);font-size:.9rem}
+      .success{color:#76ffb3}
+      .danger{color:#ff7676}
+      .warning{color:#ffb876}
+      .error{color:#ff7676}
+      .budget-input{width:80px !important}
+      .cost-input{width:80px !important}
+      .quantity-input{width:60px !important}
+      .total-cost{font-weight:bold;font-size:1.1rem}
+      .budget-status{display:flex;align-items:center;gap:8px}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
