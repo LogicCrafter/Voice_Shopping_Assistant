@@ -25,7 +25,7 @@ app.use("/api/suggestions", suggestionRoutes);
 app.use("/api/search", searchRoutes);
 
 // Mongo
-const MONGO_URI = "mongodb+srv://gaurang25:gaurang25@cluster0.t84kerv.mongodb.net/voice_shopping" || "mongodb://127.0.0.1:27017/voice_shopping";
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/voice_shopping";
 const PORT = process.env.PORT || 4000;
 
 mongoose.connect(MONGO_URI).then(() => {
